@@ -6,13 +6,12 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private ParalaxMember[] _backgrounds;
     [SerializeField] private PlayerView _playerView;
 
-    private const string SPRITE_ANIMATION_CONFIG_PATH = "SpriteAnimationConfig";
     private ParalaxController _paralaxController;
     private SpriteAnimator _spriteAnimator;
 
     private void Start()
     {
-        SpriteAnimationsConfig animationsConfig = Resources.Load<SpriteAnimationsConfig>(SPRITE_ANIMATION_CONFIG_PATH);
+        SpriteAnimationsConfig animationsConfig = Resources.Load<SpriteAnimationsConfig>(Resource.SPRITE_ANIMATION_CONFIG);
         _spriteAnimator = new SpriteAnimator(animationsConfig);
         _spriteAnimator.StartAnimation(_playerView.SpriteRenderer, Track.Idle, true, 12);
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class SpriteAnimator : IDisposable
+public sealed class SpriteAnimator : IUpdate, IDisposable
 {
     private SpriteAnimationsConfig _config;
     private Dictionary<SpriteRenderer, Animation> _activeAnimation = new Dictionary<SpriteRenderer, Animation>();

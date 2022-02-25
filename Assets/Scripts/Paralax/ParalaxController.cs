@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public sealed class ParalaxController
+public sealed class ParalaxController : IUpdate
 {
     private Transform _camera;
     private ParalaxMember[] _backgrounds;
