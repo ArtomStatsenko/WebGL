@@ -3,7 +3,7 @@ using UnityEngine;
 public sealed class GameController : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
-    [SerializeField] private ParalaxMember[] _backgrounds;
+    [SerializeField] private ParalaxBackground[] _backgrounds;
     [SerializeField] private PlayerView _playerView;
 
     private ParalaxController _paralaxController;

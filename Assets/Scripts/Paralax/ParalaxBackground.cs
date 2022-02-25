@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public sealed class ParalaxMember
+public sealed class ParalaxBackground
 {
     public Transform Transform;
     public float SpeedCoef;

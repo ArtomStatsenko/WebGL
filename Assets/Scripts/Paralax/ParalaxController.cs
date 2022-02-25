@@ -3,11 +3,11 @@ using UnityEngine;
 public sealed class ParalaxController : IUpdate
 {
     private Transform _camera;
-    private ParalaxMember[] _backgrounds;
+    private ParalaxBackground[] _backgrounds;
     private Vector3[] _backgroundsStartPosition;
     private Vector3 _cameraStartPosition;
 
-    public ParalaxController(Transform camera, ParalaxMember[] backgrounds)
+    public ParalaxController(Transform camera, ParalaxBackground[] backgrounds)
     {
         _camera = camera;
         _backgrounds = backgrounds;
@@ -22,10 +22,10 @@ public sealed class ParalaxController : IUpdate
 
     public void Update()
     {
+        Vector3 direction = _camera.position - _cameraStartPosition;
         for (int i = 0; i < _backgrounds.Length; i++)
         {
-            _backgrounds[i].Transform.position =
-                _backgroundsStartPosition[i] + (_camera.position - _cameraStartPosition) * _backgrounds[i].SpeedCoef;
+            _backgrounds[i].Transform.position = _backgroundsStartPosition[i] + direction * _backgrounds[i].SpeedCoef;
         }
     }
 }
