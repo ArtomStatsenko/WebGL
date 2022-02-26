@@ -12,18 +12,20 @@ public sealed class SpriteAnimator : IUpdate, IDisposable
         _config = config;
     }
 
-    public void StartAnimation(SpriteRenderer spriteRenderer, Track track, bool isLoop, float speed)
+    public void StartAnimation(SpriteRenderer spriteRenderer, Track track, bool isLoop)
     {
+        SpriteSequence sequence = _config.Sequences.Find(sequence => sequence.Track == track);
+       
         if(_activeAnimation.TryGetValue(spriteRenderer, out var animation))
         {
             animation.IsLoop = isLoop;
             animation.IsSleep = false;
-            animation.Speed = speed;
+            animation.Speed = sequence.AnimationSpeed;
 
             if (animation.Track != track)
             {
                 animation.Track = track;
-                animation.Sprites = _config.Sequences.Find(sequence => sequence.Track == track).Sprites;
+                animation.Sprites = sequence.Sprites;
                 animation.ResetCounter();
             }
         }
@@ -32,10 +34,10 @@ public sealed class SpriteAnimator : IUpdate, IDisposable
             _activeAnimation.Add(spriteRenderer, new Animation()
             {
                 Track = track,
-                Sprites = _config.Sequences.Find(sequence => sequence.Track == track).Sprites,
+                Sprites = sequence.Sprites,
                 IsLoop = isLoop,
-                Speed = speed
-            });
+                Speed = sequence.AnimationSpeed
+            }); ;
         }
     }
 

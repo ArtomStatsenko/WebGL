@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Knight_Idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 24549cf014a7a3349b667a13dc22bd4e, type: 3}
+    - {fileID: 2800000, guid: 77035d6e1f90f0b41acbd19849ed237b, type: 3}
+    - {fileID: 2800000, guid: a439b7990b0e6aa4aa4eb425e820d0ee, type: 3}
+    - {fileID: 2800000, guid: 56e7bf5b62652944eb866528d94375d1, type: 3}
+    - {fileID: 2800000, guid: 4619c2a3d16c07341af30afd45940273, type: 3}
+    - {fileID: 2800000, guid: edc069eb6e452634bb9218b6c4270e0b, type: 3}
+    - {fileID: 2800000, guid: 8c5fb3cbc53f00741bc30774d5b28f0f, type: 3}
+    - {fileID: 2800000, guid: e6adc241d5b43484699cee6951b8eccc, type: 3}
+    - {fileID: 2800000, guid: d859bbb9822ed43448ab83b7c8a765df, type: 3}
+    - {fileID: 2800000, guid: 5c7d575249b4cdc46be6c33b5f40824f, type: 3}
+    - {fileID: 2800000, guid: 063b16a92b0682c428e992db51c341b2, type: 3}
+    - {fileID: 2800000, guid: f32912f6787be4241b679dd81c36e708, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 24549cf014a7a3349b667a13dc22bd4e, type: 3}
+  - {fileID: 21300000, guid: e6adc241d5b43484699cee6951b8eccc, type: 3}
+  - {fileID: 21300000, guid: 5c7d575249b4cdc46be6c33b5f40824f, type: 3}
+  - {fileID: 21300000, guid: 4619c2a3d16c07341af30afd45940273, type: 3}
+  - {fileID: 21300000, guid: f32912f6787be4241b679dd81c36e708, type: 3}
+  - {fileID: 21300000, guid: a439b7990b0e6aa4aa4eb425e820d0ee, type: 3}
+  - {fileID: 21300000, guid: 063b16a92b0682c428e992db51c341b2, type: 3}
+  - {fileID: 21300000, guid: d859bbb9822ed43448ab83b7c8a765df, type: 3}
+  - {fileID: 21300000, guid: 56e7bf5b62652944eb866528d94375d1, type: 3}
+  - {fileID: 21300000, guid: 8c5fb3cbc53f00741bc30774d5b28f0f, type: 3}
+  - {fileID: 21300000, guid: edc069eb6e452634bb9218b6c4270e0b, type: 3}
+  - {fileID: 21300000, guid: 77035d6e1f90f0b41acbd19849ed237b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - idle1
+  - idle8
+  - idle10
+  - idle5
+  - idle12
+  - idle3
+  - idle11
+  - idle9
+  - idle4
+  - idle7
+  - idle6
+  - idle2
+  m_RenderDataMap: {}
+  m_Tag: Knight_Idle
+  m_IsVariant: 0

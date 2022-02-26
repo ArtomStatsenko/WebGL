@@ -1,0 +1,5 @@
+﻿public sealed class Axis
+{
+    public const string HORIZONTAL = "Horizontal";
+    public const string VERTICAL = "Vertical";
+}
