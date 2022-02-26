@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkSpeed: 2
   _movingTreshhold: 0.1
-  _jumpingTreshhold: 1
-  _startJumpSpeed: 5
+  _jumpingTreshhold: 0.1
+  _startJumpSpeed: 8
+  _mass: 2
