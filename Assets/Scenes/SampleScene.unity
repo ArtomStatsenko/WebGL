@@ -182,10 +182,7 @@ MonoBehaviour:
   _playerView: {fileID: 1339948494}
   _playerModel: {fileID: 11400000, guid: 45e0f3b3080a709449b8bfb1dda4f1f9, type: 2}
   _cannonView: {fileID: 1728937775}
-  _bulletViews:
-  - {fileID: 2332659309984200838, guid: 24bd2a26484cc404db8cca2f3d9ec7f8, type: 3}
-  - {fileID: 2332659309984200838, guid: 24bd2a26484cc404db8cca2f3d9ec7f8, type: 3}
-  - {fileID: 2332659309984200838, guid: 24bd2a26484cc404db8cca2f3d9ec7f8, type: 3}
+  _bulletView: {fileID: 2332659309984200838, guid: 24bd2a26484cc404db8cca2f3d9ec7f8, type: 3}
   _bulletModel: {fileID: 11400000, guid: 1d69aca1a341a034c8c8832d0bbfcabd, type: 2}
 --- !u!4 &106334607
 Transform:

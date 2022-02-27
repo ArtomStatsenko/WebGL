@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class GameController : MonoBehaviour
@@ -9,7 +8,7 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private PlayerView _playerView;
     [SerializeField] private PlayerModel _playerModel;
     [SerializeField] private CannonView _cannonView;
-    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private BulletView _bulletView;
     [SerializeField] private BulletModel _bulletModel;
 
     private BackgroundController _backgroundController;
@@ -28,7 +27,7 @@ public sealed class GameController : MonoBehaviour
         };
         _playerMovementController = new PlayerMovementController(_playerView, _playerModel, _spriteAnimator);
         _cannonController = new CannonController(_cannonView.Muzzle, _playerView.transform);
-        _bulletsEmitter = new BulletsEmitter(_bulletModel, _bulletPrefab, _cannonView.Muzzle.transform);
+        _bulletsEmitter = new BulletsEmitter(_bulletModel, _bulletView.gameObject, _cannonView.Muzzle.transform);
     }
 
     private void Update()

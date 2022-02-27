@@ -2,10 +2,9 @@
 
 public sealed class BulletController : IUpdate
 {
-    private float _radius = 0.3f;
-    private Vector3 _velocity;
     private float _groundLevel = 0f;
     private float _g = -9.8f;
+    private Vector3 _velocity;
     private BulletView _view;
 
     public BulletController(BulletView view)
@@ -18,7 +17,7 @@ public sealed class BulletController : IUpdate
         if (IsGrounded())
         {
             SetVelocity(_velocity.Change(y: -_velocity.y));
-            _view.transform.position = _view.transform.position.Change(y: _groundLevel + _radius);
+            _view.transform.position = _view.transform.position.Change(y: _groundLevel);
         }
         else
         {
@@ -29,7 +28,7 @@ public sealed class BulletController : IUpdate
 
     private bool IsGrounded()
     {
-        return _view.transform.position.y <= _groundLevel + _radius + float.Epsilon && _velocity.y <= 0f;
+        return _view.transform.position.y <= _groundLevel + float.Epsilon && _velocity.y <= 0f;
     }
 
     public void Throw(Vector3 position, Vector3 velocity)

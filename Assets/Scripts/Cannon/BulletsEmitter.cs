@@ -6,15 +6,21 @@ public sealed class BulletsEmitter : IUpdate
     private BulletModel _model;
     private Transform _transform;
     private int _currentIndex;
+    private int _bulletQuantity = 5;
     private float _timeTillNextBullet;
-    private GameObjectPool _bulletsPool;
     private List<BulletController> _bullets = new List<BulletController>();
 
-    public BulletsEmitter(BulletModel model, GameObject prefab, Transform transfrom)
+    public BulletsEmitter(BulletModel model, GameObject bulletPrefab, Transform transform)
     {
         _model = model;
-        _transform = transfrom;
-        _bulletsPool = new GameObjectPool(prefab);
+        _transform = transform;
+
+        for (int i = 0; i < _bulletQuantity; i++)
+        {
+            GameObject bullet = Object.Instantiate(bulletPrefab);
+            BulletView view = bullet.GetComponent<BulletView>();
+            _bullets.Add(new BulletController(view));
+        }
     }
 
     public void Update()
@@ -26,14 +32,8 @@ public sealed class BulletsEmitter : IUpdate
         else
         {
             _timeTillNextBullet = _model.Delay;
-
-            GameObject go = _bulletsPool.GetGameObject();
-            BulletView view = go.GetComponent<BulletView>();
-            _bullets.Add(new BulletController(view));
-
-            _bullets[_currentIndex].Throw(_transform.position, _transform.up * _model.StartSpeed);
+            _bullets[_currentIndex].Throw(_transform.position, -_transform.up * _model.StartSpeed);
             _currentIndex++;
-
             if (_currentIndex >= _bullets.Count)
             {
                 _currentIndex = 0;
