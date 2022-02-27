@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62222d371ca6ef848bd98a3ac2c5cae5, type: 3}
-  m_Name: BackgroundLayerConfig
+  m_Script: {fileID: 11500000, guid: ee80c322d5c338c458d8ed0d4ffe2af7, type: 3}
+  m_Name: BulletModel
   m_EditorClassIdentifier: 
-  _backgrounds: []
+  _delay: 1
+  _startSpeed: 5

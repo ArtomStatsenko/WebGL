@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class GameController : MonoBehaviour
@@ -7,10 +8,15 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private SpriteAnimationsConfig _animationsConfig;
     [SerializeField] private PlayerView _playerView;
     [SerializeField] private PlayerModel _playerModel;
+    [SerializeField] private CannonView _cannonView;
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private BulletModel _bulletModel;
 
     private BackgroundController _backgroundController;
     private SpriteAnimator _spriteAnimator;
     private PlayerMovementController _playerMovementController;
+    private CannonController _cannonController;
+    private BulletsEmitter _bulletsEmitter;
 
     private void Start()
     {
@@ -21,6 +27,8 @@ public sealed class GameController : MonoBehaviour
             IsEndless = true
         };
         _playerMovementController = new PlayerMovementController(_playerView, _playerModel, _spriteAnimator);
+        _cannonController = new CannonController(_cannonView.Muzzle, _playerView.transform);
+        _bulletsEmitter = new BulletsEmitter(_bulletModel, _bulletPrefab, _cannonView.Muzzle.transform);
     }
 
     private void Update()
@@ -28,6 +36,8 @@ public sealed class GameController : MonoBehaviour
         _spriteAnimator.Update();
         _backgroundController.Update();
         _playerMovementController.Update();
+        _cannonController.Update();
+        _bulletsEmitter.Update();
     }
 
     private void FixedUpdate()
