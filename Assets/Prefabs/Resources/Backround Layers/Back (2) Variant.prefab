@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5995337383823431010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3206480108597233490, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: beec87dbf13c45041814280d8ba17b89, type: 3}
+    - target: {fileID: 3206480108597233490, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108597233493, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643104, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_Name
+      value: Back (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643104, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480108851643105, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480109074045078, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206480109074045079, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: beec87dbf13c45041814280d8ba17b89, type: 3}
+    - target: {fileID: 3206480109074045079, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164744871890954189, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
+      propertyPath: _speedCoef
+      value: 0.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6dda1cec5822acd4c92b0007949006a6, type: 3}
