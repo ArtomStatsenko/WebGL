@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public sealed class PlayerMovementController
+public sealed class PlayerMovementController : IUpdate
 {
     private PlayerView _view;
     private PlayerModel _model;

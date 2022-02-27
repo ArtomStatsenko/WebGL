@@ -83,5 +83,9 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5469270694231463565, guid: 95f3d39d0d3766544a1fa0b6138cf36f, type: 3}
+      propertyPath: _speedCoef
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95f3d39d0d3766544a1fa0b6138cf36f, type: 3}

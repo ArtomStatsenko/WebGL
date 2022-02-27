@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2444278384009255953, guid: 68cfe16eadf9e814984ef6698d43eca9, type: 3}
+      propertyPath: _speedCoef
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8996897539617710922, guid: 68cfe16eadf9e814984ef6698d43eca9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.64

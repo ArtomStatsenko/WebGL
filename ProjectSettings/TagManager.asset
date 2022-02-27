@@ -38,7 +38,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Backround
+  - name: Background
     uniqueID: 1003599069
     locked: 0
   - name: MainSprites

@@ -3,26 +3,30 @@ using UnityEngine;
 public sealed class GameController : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
-    [SerializeField] private ParalaxBackground[] _backgrounds;
+    [SerializeField] private BackgroundLayerView[] _backgrounds;
     [SerializeField] private SpriteAnimationsConfig _animationsConfig;
     [SerializeField] private PlayerView _playerView;
     [SerializeField] private PlayerModel _playerModel;
 
-    private ParalaxController _paralaxController;
+    private BackgroundController _backgroundController;
     private SpriteAnimator _spriteAnimator;
     private PlayerMovementController _playerMovementController;
 
     private void Start()
     {
         _spriteAnimator = new SpriteAnimator(_animationsConfig);
-        _paralaxController = new ParalaxController(_camera.transform, _backgrounds);
+        _backgroundController = new BackgroundController(_camera.transform, _backgrounds)
+        {
+            IsParallax = true,
+            IsEndless = true
+        };
         _playerMovementController = new PlayerMovementController(_playerView, _playerModel, _spriteAnimator);
     }
 
     private void Update()
     {
         _spriteAnimator.Update();
-        _paralaxController.Update();
+        _backgroundController.Update();
         _playerMovementController.Update();
     }
 
