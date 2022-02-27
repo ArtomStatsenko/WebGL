@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sequences:
   - Track: 0
-    AnimationSpeed: 18
+    AnimationSpeed: 12
     Sprites:
     - {fileID: 5770251550782387183, guid: da98f5240d99d5e4aaf81315aa455ac6, type: 3}
     - {fileID: -4118208772998566661, guid: da98f5240d99d5e4aaf81315aa455ac6, type: 3}
@@ -35,7 +35,7 @@ MonoBehaviour:
     - {fileID: -1001250234447512021, guid: da98f5240d99d5e4aaf81315aa455ac6, type: 3}
     - {fileID: -6423605263834463869, guid: da98f5240d99d5e4aaf81315aa455ac6, type: 3}
   - Track: 1
-    AnimationSpeed: 24
+    AnimationSpeed: 36
     Sprites:
     - {fileID: 1275204418052530407, guid: a24f83236562dba4ea7ebc32aad816d9, type: 3}
     - {fileID: 4616872279825948225, guid: a24f83236562dba4ea7ebc32aad816d9, type: 3}
