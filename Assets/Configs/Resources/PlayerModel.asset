@@ -15,5 +15,5 @@ MonoBehaviour:
   _walkSpeed: 4
   _movingTreshhold: 0.1
   _jumpingTreshhold: 0.1
-  _startJumpSpeed: 10
+  _startJumpSpeed: 12
   _mass: 3

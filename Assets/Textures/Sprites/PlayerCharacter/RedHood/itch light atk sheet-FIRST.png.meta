@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 62a70e573ee449542a31ff386097cd0f
+guid: 50ec29c44cdead942b54686ad7922150
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7320810298388350287
-    second: itch hurt 2 sheet-Sheet_0
+      213: -922432842217418478
+    second: itch light atk sheet-FIRST_0
   - first:
-      213: 2760490868315971840
-    second: itch hurt 2 sheet-Sheet_1
+      213: 6300132949313679076
+    second: itch light atk sheet-FIRST_1
   - first:
-      213: 4546042892816791458
-    second: itch hurt 2 sheet-Sheet_2
+      213: 7524087894264839171
+    second: itch light atk sheet-FIRST_2
   - first:
-      213: 6133235146095188253
-    second: itch hurt 2 sheet-Sheet_3
+      213: -5784200324050847553
+    second: itch light atk sheet-FIRST_3
   - first:
-      213: -8853825974755322874
-    second: itch hurt 2 sheet-Sheet_4
+      213: 7324846919248959438
+    second: itch light atk sheet-FIRST_4
   - first:
-      213: -3007589213488406314
-    second: itch hurt 2 sheet-Sheet_5
+      213: -2937168562497395325
+    second: itch light atk sheet-FIRST_5
   - first:
-      213: 5701692524486732836
-    second: itch hurt 2 sheet-Sheet_6
+      213: -5184988762641401054
+    second: itch light atk sheet-FIRST_6
+  - first:
+      213: 8227809953610632753
+    second: itch light atk sheet-FIRST_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,35 +111,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_0
+      name: itch light atk sheet-FIRST_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba7a8822d1476a90800000000000000
-      internalID: -7320810298388350287
+      spriteID: 2111a7e973cd233f0800000000000000
+      internalID: -922432842217418478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_1
+      name: itch light atk sheet-FIRST_1
       rect:
         serializedVersion: 2
         x: 80
@@ -171,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 001eeaba1db3f4620800000000000000
-      internalID: 2760490868315971840
+      spriteID: 4ee6391b9819e6750800000000000000
+      internalID: 6300132949313679076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_2
+      name: itch light atk sheet-FIRST_2
       rect:
         serializedVersion: 2
         x: 160
@@ -192,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a7b800dce9c61f30800000000000000
-      internalID: 4546042892816791458
+      spriteID: 30cf874531eea6860800000000000000
+      internalID: 7524087894264839171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_3
+      name: itch light atk sheet-FIRST_3
       rect:
         serializedVersion: 2
         x: 240
@@ -213,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19d1febed0ad1550800000000000000
-      internalID: 6133235146095188253
+      spriteID: fb8ff3783746abfa0800000000000000
+      internalID: -5784200324050847553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_4
+      name: itch light atk sheet-FIRST_4
       rect:
         serializedVersion: 2
         x: 320
@@ -234,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 604159f7f24e02580800000000000000
-      internalID: -8853825974755322874
+      spriteID: ec7d2ffd67517a560800000000000000
+      internalID: 7324846919248959438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_5
+      name: itch light atk sheet-FIRST_5
       rect:
         serializedVersion: 2
         x: 400
@@ -255,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d02ab39b85e246d0800000000000000
-      internalID: -3007589213488406314
+      spriteID: 385e5e211c41d37d0800000000000000
+      internalID: -2937168562497395325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: itch hurt 2 sheet-Sheet_6
+      name: itch light atk sheet-FIRST_6
       rect:
         serializedVersion: 2
         x: 480
@@ -276,8 +255,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c2884642b702f40800000000000000
-      internalID: 5701692524486732836
+      spriteID: 22bfd5e01383b08b0800000000000000
+      internalID: -5184988762641401054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itch light atk sheet-FIRST_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 16
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e826c5f8d0f2270800000000000000
+      internalID: 8227809953610632753
       vertices: []
       indices: 
       edges: []
