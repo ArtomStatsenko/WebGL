@@ -7,7 +7,7 @@ public sealed class Animation
     private Track _track;
     private bool _isLoop = false;
     private bool _isSleep;
-    private float _speed = 10f;
+    private float _speed;
     private float _counter = 0f;
 
     public List<Sprite> Sprites

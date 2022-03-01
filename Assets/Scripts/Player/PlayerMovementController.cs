@@ -4,18 +4,21 @@ public sealed class PlayerMovementController : IUpdate
 {
     private PlayerView _view;
     private PlayerModel _model;
-    private SpriteAnimator _spriteAnimator;
     private float _xAxisInput = 0f;
     private float _yVelocity = 0f;
     private float _groundLevel = 0f;
     private float _acceleration = -9.8f;
     private bool _doJump = false;
 
+    private PlayerAnimator _animator;
+
     public PlayerMovementController(PlayerView view, PlayerModel model, SpriteAnimator animator)
     {
         _view = view;
         _model = model;
-        _spriteAnimator = animator;
+
+        _animator = new PlayerAnimator(new Idle(), animator, view);
+        _animator.IsJumping = false;
     }
 
     public void Update()
@@ -24,6 +27,11 @@ public sealed class PlayerMovementController : IUpdate
         _xAxisInput = Input.GetAxis(Axis.HORIZONTAL);
 
         bool isMovingSide = Mathf.Abs(_xAxisInput) > _model.MovingTreshold;
+        if (_animator.IsMoving != isMovingSide)
+        {
+            _animator.IsMoving = isMovingSide;
+            _animator.Request();
+        }
         if (isMovingSide)
         {
             MoveSide();
@@ -31,17 +39,13 @@ public sealed class PlayerMovementController : IUpdate
 
         if (IsGrounded())
         {
-            _spriteAnimator.StartAnimation(_view.SpriteRenderer, isMovingSide ? Track.Walk : Track.Idle, true);
-
             if (_doJump && Mathf.Approximately(_yVelocity, 0f))
             {
-                _yVelocity = _model.StartJumpSpeed;
-                _spriteAnimator.StartAnimation(_view.SpriteRenderer, Track.Jump, false);
+                Jump(true);
             }
             else if (_yVelocity < 0f)
             {
-                _yVelocity = 0f;
-                _view.transform.position = _view.transform.position.Change(y: _groundLevel);
+                Jump(false);
             }
         }
         else
@@ -62,5 +66,21 @@ public sealed class PlayerMovementController : IUpdate
     private bool IsGrounded()
     {
         return _view.transform.position.y <= _groundLevel + float.Epsilon && _yVelocity <= 0f;
+    }
+
+    private void Jump(bool isJumping)
+    {
+        if (isJumping)
+        {
+            _yVelocity = _model.StartJumpSpeed;
+        }
+        else
+        {
+            _yVelocity = 0f;
+            _view.transform.position = _view.transform.position.Change(y: _groundLevel);
+        }
+
+        _animator.IsJumping = isJumping;
+        _animator.Request();
     }
 }
