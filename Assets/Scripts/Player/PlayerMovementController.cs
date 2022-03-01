@@ -30,7 +30,7 @@ public sealed class PlayerMovementController : IUpdate
         }
 
         if (IsGrounded())
-        {           
+        {
             _spriteAnimator.StartAnimation(_view.SpriteRenderer, isMovingSide ? Track.Walk : Track.Idle, true);
 
             if (_doJump && Mathf.Approximately(_yVelocity, 0f))
