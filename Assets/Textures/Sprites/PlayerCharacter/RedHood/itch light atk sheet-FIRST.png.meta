@@ -118,10 +118,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 64
-        height: 64
+        x: 5
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 64
-        height: 64
+        x: 86
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,12 +160,12 @@ TextureImporter:
       name: itch light atk sheet-FIRST_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 17
+        width: 55
+        height: 48
+      alignment: 9
+      pivot: {x: 0.44949535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: itch light atk sheet-FIRST_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 16
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 248
+        y: 17
+        width: 53
+        height: 48
+      alignment: 9
+      pivot: {x: 0.44234884, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,10 +202,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 16
-        width: 64
-        height: 64
+        x: 329
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 16
-        width: 64
-        height: 64
+        x: 409
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 16
-        width: 64
-        height: 64
+        x: 490
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: itch light atk sheet-FIRST_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 16
-        width: 64
-        height: 64
+        x: 570
+        y: 17
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
