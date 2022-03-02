@@ -175,12 +175,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 64
-        height: 64
+        x: 7
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 64
-        height: 64
+        x: 87
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
-        width: 64
-        height: 64
+        x: 167
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 16
-        width: 64
-        height: 64
+        x: 247
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 16
-        width: 64
-        height: 64
+        x: 327
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 16
-        width: 64
-        height: 64
+        x: 407
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 16
-        width: 64
-        height: 64
+        x: 487
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 16
-        width: 64
-        height: 64
+        x: 567
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 16
-        width: 64
-        height: 64
+        x: 647
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 16
-        width: 64
-        height: 64
+        x: 727
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,12 +385,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 16
-        width: 64
-        height: 64
+        x: 807
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,12 +406,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_11
       rect:
         serializedVersion: 2
-        x: 880
-        y: 16
-        width: 64
-        height: 64
+        x: 887
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,12 +427,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_12
       rect:
         serializedVersion: 2
-        x: 960
-        y: 16
-        width: 64
-        height: 64
+        x: 967
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,12 +448,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 16
-        width: 64
-        height: 64
+        x: 1047
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,12 +469,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 16
-        width: 64
-        height: 64
+        x: 1127
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,12 +490,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 16
-        width: 64
-        height: 64
+        x: 1207
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -511,12 +511,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 16
-        width: 64
-        height: 64
+        x: 1287
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 16
-        width: 64
-        height: 64
+        x: 1367
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,12 +553,12 @@ TextureImporter:
       name: itch jump sheet-Sheet_18
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 16
-        width: 64
-        height: 64
+        x: 1444
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

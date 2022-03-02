@@ -10,7 +10,8 @@ public sealed class GameController : MonoBehaviour
 
     private BackgroundController _backgroundController;
     private SpriteAnimator _spriteAnimator;
-    private PlayerMovementController _playerMovementController;
+    private PlayerMovementPhysicsController _playerMovementController;
+    private CameraController _cameraController;
 
     private void Start()
     {
@@ -20,7 +21,8 @@ public sealed class GameController : MonoBehaviour
             IsParallax = true,
             IsEndless = true
         };
-        _playerMovementController = new PlayerMovementController(_playerView, _playerModel, _spriteAnimator);
+        _playerMovementController = new PlayerMovementPhysicsController(_playerView, _playerModel, _spriteAnimator);
+        _cameraController = new CameraController(_camera.transform, _playerView.transform);
     }
 
     private void Update()
@@ -32,7 +34,12 @@ public sealed class GameController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        _playerMovementController.FixedUpdate();
+    }
+
+    private void LateUpdate()
+    {
+        _cameraController.LateUpdate();
     }
 
     private void OnDestroy()

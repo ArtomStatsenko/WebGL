@@ -190,10 +190,10 @@ TextureImporter:
       name: itch run-Sheet sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 64
-        height: 64
+        x: 5
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: itch run-Sheet sheet_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 64
-        height: 64
+        x: 85
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: itch run-Sheet sheet_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
-        width: 64
-        height: 64
+        x: 165
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: itch run-Sheet sheet_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 16
-        width: 64
-        height: 64
+        x: 245
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: itch run-Sheet sheet_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 16
-        width: 64
-        height: 64
+        x: 325
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: itch run-Sheet sheet_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 16
-        width: 64
-        height: 64
+        x: 405
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: itch run-Sheet sheet_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 16
-        width: 64
-        height: 64
+        x: 485
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: itch run-Sheet sheet_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 16
-        width: 64
-        height: 64
+        x: 565
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: itch run-Sheet sheet_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 16
-        width: 64
-        height: 64
+        x: 645
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: itch run-Sheet sheet_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 16
-        width: 64
-        height: 64
+        x: 725
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: itch run-Sheet sheet_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 16
-        width: 64
-        height: 64
+        x: 805
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +421,10 @@ TextureImporter:
       name: itch run-Sheet sheet_11
       rect:
         serializedVersion: 2
-        x: 880
-        y: 16
-        width: 64
-        height: 64
+        x: 885
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: itch run-Sheet sheet_12
       rect:
         serializedVersion: 2
-        x: 960
-        y: 16
-        width: 64
-        height: 64
+        x: 965
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: itch run-Sheet sheet_13
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 16
-        width: 64
-        height: 64
+        x: 1045
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: itch run-Sheet sheet_14
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 16
-        width: 64
-        height: 64
+        x: 1125
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: itch run-Sheet sheet_15
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 16
-        width: 64
-        height: 64
+        x: 1205
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +526,10 @@ TextureImporter:
       name: itch run-Sheet sheet_16
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 16
-        width: 64
-        height: 64
+        x: 1285
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +547,10 @@ TextureImporter:
       name: itch run-Sheet sheet_17
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 16
-        width: 64
-        height: 64
+        x: 1365
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +568,10 @@ TextureImporter:
       name: itch run-Sheet sheet_18
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 16
-        width: 64
-        height: 64
+        x: 1445
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,10 +589,10 @@ TextureImporter:
       name: itch run-Sheet sheet_19
       rect:
         serializedVersion: 2
-        x: 1520
-        y: 16
-        width: 64
-        height: 64
+        x: 1525
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +610,10 @@ TextureImporter:
       name: itch run-Sheet sheet_20
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 16
-        width: 64
-        height: 64
+        x: 1605
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +631,10 @@ TextureImporter:
       name: itch run-Sheet sheet_21
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 16
-        width: 64
-        height: 64
+        x: 1685
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,10 +652,10 @@ TextureImporter:
       name: itch run-Sheet sheet_22
       rect:
         serializedVersion: 2
-        x: 1760
-        y: 16
-        width: 64
-        height: 64
+        x: 1765
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,10 +673,10 @@ TextureImporter:
       name: itch run-Sheet sheet_23
       rect:
         serializedVersion: 2
-        x: 1840
-        y: 16
-        width: 64
-        height: 64
+        x: 1845
+        y: 15
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

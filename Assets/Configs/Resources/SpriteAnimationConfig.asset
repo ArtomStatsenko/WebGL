@@ -62,7 +62,7 @@ MonoBehaviour:
     - {fileID: 2652618804364826060, guid: a24f83236562dba4ea7ebc32aad816d9, type: 3}
     - {fileID: 6561547331422267949, guid: a24f83236562dba4ea7ebc32aad816d9, type: 3}
   - Track: 2
-    AnimationSpeed: 19
+    AnimationSpeed: 15
     Sprites:
     - {fileID: 1937563075703252803, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
     - {fileID: -1642874414551790905, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
@@ -79,10 +79,6 @@ MonoBehaviour:
     - {fileID: 3325086125591716169, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
     - {fileID: -3913230824436460175, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
     - {fileID: -6796624284384122594, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
-    - {fileID: 7016978500644561677, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
-    - {fileID: -1178057378928704504, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
-    - {fileID: 1692959348783638337, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
-    - {fileID: -8800979115281204381, guid: 23459bbf23e8f93409ff434d5c9c4213, type: 3}
   - Track: 3
     AnimationSpeed: 16
     Sprites:

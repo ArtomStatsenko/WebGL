@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcdaa74ebfb26b489fad40c1da35844, type: 3}
   m_Name: PlayerModel
   m_EditorClassIdentifier: 
-  _walkSpeed: 4
+  _walkSpeed: 150
   _movingTreshhold: 0.1
   _jumpingTreshhold: 0.1
-  _startJumpSpeed: 12
-  _mass: 3
+  _jumpForce: 300

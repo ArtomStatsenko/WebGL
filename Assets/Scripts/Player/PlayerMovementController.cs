@@ -35,7 +35,7 @@ public sealed class PlayerMovementController : IUpdate
 
             if (_doJump && Mathf.Approximately(_yVelocity, 0f))
             {
-                _yVelocity = _model.StartJumpSpeed;
+                _yVelocity = _model.JumpForce;
                 _spriteAnimator.StartAnimation(_view.SpriteRenderer, Track.Jump, false);
             }
             else if (_yVelocity < 0f)
@@ -46,7 +46,7 @@ public sealed class PlayerMovementController : IUpdate
         }
         else
         {
-            _yVelocity += _acceleration * Time.deltaTime * _model.Mass;
+            _yVelocity += _acceleration * Time.deltaTime;
             _view.transform.position += Vector3.up * Time.deltaTime * _yVelocity;
         }
     }
