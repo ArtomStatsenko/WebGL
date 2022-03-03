@@ -8,6 +8,7 @@ public sealed class PlayerMovementPhysicsController : IFixedUpdate
     private float _xAxisInput;
     private bool _doJump;
     private ContactsPoller _contactsPoller;
+    private bool _isMovingSide;
 
     public PlayerMovementPhysicsController(PlayerView view, PlayerModel model, SpriteAnimator animator)
     {
@@ -21,21 +22,23 @@ public sealed class PlayerMovementPhysicsController : IFixedUpdate
     {
         _doJump = Input.GetAxis(Axis.VERTICAL) > _model.JumpingTreshold;
         _xAxisInput = Input.GetAxis(Axis.HORIZONTAL);
+        _isMovingSide = Mathf.Abs(_xAxisInput) > _model.MovingTreshold;
+
+        Animate();
     }
 
     public void FixedUpdate()
     {
         _contactsPoller.Update();
 
-        bool isMovingSide = Mathf.Abs(_xAxisInput) > _model.MovingTreshold;
         bool isMovingLeft = _xAxisInput < 0f;
-        if (isMovingSide)
+        if (_isMovingSide)
         {
             _view.SpriteRenderer.flipX = isMovingLeft;
         }
 
         float newVelocity = 0f;
-        if (isMovingSide && (isMovingLeft || !_contactsPoller.HasLeftContacts) && (isMovingLeft || !_contactsPoller.HasRightContacts))
+        if (_isMovingSide && (!isMovingLeft || !_contactsPoller.HasLeftContacts) && (isMovingLeft || !_contactsPoller.HasRightContacts))
         {
             float walkDirection = isMovingLeft ? -1f : 1f;
             newVelocity = Time.fixedDeltaTime * _model.WalkSpeed * walkDirection;
@@ -46,16 +49,18 @@ public sealed class PlayerMovementPhysicsController : IFixedUpdate
         {
             _view.Rigidbody.AddForce(Vector3.up * _model.JumpForce);
         }
+    }
 
+    private void Animate()
+    {
         if (_contactsPoller.IsGrounded)
         {
-            var track = isMovingSide ? Track.Walk : Track.Idle;
+            Track track = _isMovingSide ? Track.Walk : Track.Idle;
             _spriteAnimator.StartAnimation(_view.SpriteRenderer, track, true);
         }
         else if (Mathf.Abs(_view.Rigidbody.velocity.y) > 1f)
         {
-            var track = Track.Jump;
-            _spriteAnimator.StartAnimation(_view.SpriteRenderer, track, true);
+            _spriteAnimator.StartAnimation(_view.SpriteRenderer, Track.Jump, false);
         }
     }
 }
