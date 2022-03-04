@@ -3,5 +3,6 @@
     Idle,
     Walk,
     Jump,
-    Attack
+    Attack,
+    CoinRotation
 }

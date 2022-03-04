@@ -90,3 +90,12 @@ MonoBehaviour:
     - {fileID: -2937168562497395325, guid: 50ec29c44cdead942b54686ad7922150, type: 3}
     - {fileID: -5184988762641401054, guid: 50ec29c44cdead942b54686ad7922150, type: 3}
     - {fileID: 8227809953610632753, guid: 50ec29c44cdead942b54686ad7922150, type: 3}
+  - Track: 4
+    AnimationSpeed: 12
+    Sprites:
+    - {fileID: -3338749442709606003, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+    - {fileID: 5848064539680731454, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+    - {fileID: -2652133911391862278, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+    - {fileID: 5522397121026081838, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+    - {fileID: 4786861022352539597, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+    - {fileID: 5728404248119495573, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}

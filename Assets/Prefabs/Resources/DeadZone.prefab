@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1965954932348461000}
   - component: {fileID: 6517428877271776264}
+  - component: {fileID: 6805756079535533900}
   m_Layer: 0
   m_Name: DeadZone
   m_TagString: Untagged
@@ -49,7 +50,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.16}
+  m_Offset: {x: 0, y: -0.53}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -62,6 +63,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3699479, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &6805756079535533900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965954932348461001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b53ed8d0b67ba24783a90d773c29379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 2742200219909453449}
+  _collider: {fileID: 6517428877271776264}
 --- !u!1001 &1384165050841391877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135,6 +150,11 @@ PrefabInstance:
 --- !u!4 &2742200219909453448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3835881976462185869, guid: d3e86c7fae8b0b34388abf6c34277326, type: 3}
+  m_PrefabInstance: {fileID: 1384165050841391877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2742200219909453449 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3835881976462185868, guid: d3e86c7fae8b0b34388abf6c34277326, type: 3}
   m_PrefabInstance: {fileID: 1384165050841391877}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2431779942776841037
