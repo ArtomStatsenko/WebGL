@@ -5,11 +5,11 @@ public sealed class PlayerMovementController : IUpdate
     private PlayerView _view;
     private PlayerModel _model;
     private SpriteAnimator _spriteAnimator;
-    private float _xAxisInput = 0f;
-    private float _yVelocity = 0f;
+    private float _xAxisInput;
+    private float _yVelocity;
     private float _groundLevel = 0f;
     private float _acceleration = -9.8f;
-    private bool _doJump = false;
+    private bool _doJump;
 
     public PlayerMovementController(PlayerView view, PlayerModel model, SpriteAnimator animator)
     {
