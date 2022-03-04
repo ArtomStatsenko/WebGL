@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using Object = UnityEngine.Object;
 
 public sealed class CoinsManager : IDisposable
 {
     private PlayerView _playerView;
-    private List<LevelObjectView> _coinViews;
     private SpriteAnimator _spriteAnimator;
 
-    public CoinsManager(PlayerView playerView, List<LevelObjectView> coinViews, SpriteAnimator animator)
+    public CoinsManager(PlayerView playerView, CoinView[] coinViews, SpriteAnimator animator)
     {
         _playerView = playerView;
-        _coinViews = coinViews;
         _spriteAnimator = animator;
         _playerView.OnLevelObjectContactedEvent += OnLevelObjectContacted;
 
@@ -23,10 +20,11 @@ public sealed class CoinsManager : IDisposable
 
     private void OnLevelObjectContacted(LevelObjectView view)
     {
-        if (_coinViews.Contains(view))
+        var coinView = view as CoinView;
+        if (coinView != null)
         {
-            _spriteAnimator.StopAnimation(view.SpriteRenderer);
-            Object.Destroy(view.gameObject);
+            _spriteAnimator.StopAnimation(coinView.SpriteRenderer);
+            Object.Destroy(coinView.gameObject);
         }
     }
 

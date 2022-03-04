@@ -1,66 +1,66 @@
 ﻿using UnityEngine;
 
-public sealed class PlayerMovementController : IUpdate
+public sealed class PlayerMovementController : IUpdate, IFixedUpdate
 {
     private PlayerView _view;
     private PlayerModel _model;
     private SpriteAnimator _spriteAnimator;
+    private ContactsPoller _contactsPoller;
     private float _xAxisInput;
-    private float _yVelocity;
-    private float _groundLevel = 0f;
-    private float _acceleration = -9.8f;
     private bool _doJump;
+    private bool _isMovingSide;
 
     public PlayerMovementController(PlayerView view, PlayerModel model, SpriteAnimator animator)
     {
         _view = view;
         _model = model;
         _spriteAnimator = animator;
+        _contactsPoller = new ContactsPoller(view.Collider);
     }
 
     public void Update()
     {
         _doJump = Input.GetAxis(Axis.VERTICAL) > _model.JumpingTreshold;
         _xAxisInput = Input.GetAxis(Axis.HORIZONTAL);
+        _isMovingSide = Mathf.Abs(_xAxisInput) > _model.MovingTreshold;
 
-        bool isMovingSide = Mathf.Abs(_xAxisInput) > _model.MovingTreshold;
-        if (isMovingSide)
+        Animate();
+    }
+
+    public void FixedUpdate()
+    {
+        _contactsPoller.Update();
+
+        bool isMovingLeft = _xAxisInput < 0f;
+        if (_isMovingSide)
         {
-            MoveSide();
+            _view.SpriteRenderer.flipX = isMovingLeft;
         }
 
-        if (IsGrounded())
+        float newVelocity = 0f;
+        if (_isMovingSide && (!isMovingLeft || !_contactsPoller.HasLeftContacts) && (isMovingLeft || !_contactsPoller.HasRightContacts))
         {
-            _spriteAnimator.StartAnimation(_view.SpriteRenderer, isMovingSide ? Track.Walk : Track.Idle, true);
-
-            if (_doJump && Mathf.Approximately(_yVelocity, 0f))
-            {
-                _yVelocity = _model.JumpForce;
-                _spriteAnimator.StartAnimation(_view.SpriteRenderer, Track.Jump, false);
-            }
-            else if (_yVelocity < 0f)
-            {
-                _yVelocity = 0f;
-                _view.transform.position = _view.transform.position.Change(y: _groundLevel);
-            }
+            float walkDirection = isMovingLeft ? -1f : 1f;
+            newVelocity = Time.fixedDeltaTime * _model.WalkSpeed * walkDirection;
         }
-        else
+        _view.Rigidbody.velocity = _view.Rigidbody.velocity.Change(x: newVelocity);
+
+        if (_contactsPoller.IsGrounded && _doJump && Mathf.Abs(_view.Rigidbody.velocity.y) <= _model.JumpingTreshold)
         {
-            _yVelocity += _acceleration * Time.deltaTime;
-            _view.transform.position += Vector3.up * Time.deltaTime * _yVelocity;
+            _view.Rigidbody.AddForce(Vector3.up * _model.JumpForce);
         }
     }
 
-    private void MoveSide()
+    private void Animate()
     {
-        Vector3 walkDirection = _xAxisInput < 0f ? Vector3.left : Vector3.right;
-        _view.transform.position += walkDirection * Time.deltaTime * _model.WalkSpeed;
-        bool flipX = _xAxisInput < 0f;
-        _view.SpriteRenderer.flipX = flipX;
-    }
-
-    private bool IsGrounded()
-    {
-        return _view.transform.position.y <= _groundLevel + float.Epsilon && _yVelocity <= 0f;
+        if (_contactsPoller.IsGrounded)
+        {
+            Track track = _isMovingSide ? Track.Walk : Track.Idle;
+            _spriteAnimator.StartAnimation(_view.SpriteRenderer, track, true);
+        }
+        else if (Mathf.Abs(_view.Rigidbody.velocity.y) > 1f)
+        {
+            _spriteAnimator.StartAnimation(_view.SpriteRenderer, Track.Jump, false);
+        }
     }
 }

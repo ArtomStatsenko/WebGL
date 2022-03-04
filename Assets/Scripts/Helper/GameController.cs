@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class GameController : MonoBehaviour
@@ -8,12 +7,11 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private SpriteAnimationsConfig _animationsConfig;
     [SerializeField] private PlayerView _playerView;
     [SerializeField] private PlayerModel _playerModel;
-    [SerializeField] private List<LevelObjectView> _coinViews;
-    [SerializeField] private List<LevelObjectView> _deadZoneViews;
+    [SerializeField] private CoinView[] _coinViews;
 
     private BackgroundController _backgroundController;
     private SpriteAnimator _spriteAnimator;
-    private PlayerMovementPhysicsController _playerMovementController;
+    private PlayerMovementController _playerMovementController;
     private CameraController _cameraController;
     private CoinsManager _coinsManager;
     private DeadZoneManager _deadZoneManager;
@@ -26,10 +24,10 @@ public sealed class GameController : MonoBehaviour
             IsParallax = true,
             IsEndless = true
         };
-        _playerMovementController = new PlayerMovementPhysicsController(_playerView, _playerModel, _spriteAnimator);
+        _playerMovementController = new PlayerMovementController(_playerView, _playerModel, _spriteAnimator);
         _cameraController = new CameraController(_camera.transform, _playerView.transform);
         _coinsManager = new CoinsManager(_playerView, _coinViews, _spriteAnimator);
-        _deadZoneManager = new DeadZoneManager(_playerView, _deadZoneViews);
+        _deadZoneManager = new DeadZoneManager(_playerView);
     }
 
     private void Update()
@@ -51,6 +49,8 @@ public sealed class GameController : MonoBehaviour
 
     private void OnDestroy()
     {
-        
+        _spriteAnimator.Dispose();
+        _coinsManager.Dispose();
+        _deadZoneManager.Dispose();
     }
 }
