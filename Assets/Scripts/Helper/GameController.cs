@@ -1,3 +1,5 @@
+using Pathfinding;
+using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class GameController : MonoBehaviour
@@ -8,6 +10,14 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private PlayerView _playerView;
     [SerializeField] private PlayerModel _playerModel;
     [SerializeField] private CoinView[] _coinViews;
+    [SerializeField] private EnemyView _jinnView;
+    [SerializeField] private EnemyView _dragonView;
+    [SerializeField] private Transform _dragonTarget;
+    [SerializeField] private AIConfig _aiConfig;
+    [SerializeField] private Seeker _stalkerAiSeeker;
+    [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
+    [SerializeField] private AIPatrolPath _protectorAIPatrolPath;
+    [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
 
     private BackgroundController _backgroundController;
     private SpriteAnimator _spriteAnimator;
@@ -15,6 +25,9 @@ public sealed class GameController : MonoBehaviour
     private CameraController _cameraController;
     private CoinsManager _coinsManager;
     private DeadZoneManager _deadZoneManager;
+    private ProtectorAI _protectorAi;
+    private StalkerAI _stalkerPatrol;
+    private ProtectedZone _protectedZone;
 
     private void Start()
     {
@@ -28,6 +41,16 @@ public sealed class GameController : MonoBehaviour
         _cameraController = new CameraController(_camera.transform, _playerView.transform);
         _coinsManager = new CoinsManager(_playerView, _coinViews, _spriteAnimator);
         _deadZoneManager = new DeadZoneManager(_playerView);
+
+        _protectorAi = new ProtectorAI(_jinnView, _aiConfig.Waypoints, _protectorAIDestinationSetter, _protectorAIPatrolPath, _spriteAnimator);
+        _protectorAi.Init();
+
+        _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAi });
+        _protectedZone.Init();
+
+        _stalkerPatrol = new StalkerAI(_dragonView, _stalkerAiSeeker, _dragonTarget, _aiConfig, _spriteAnimator);
+        
+        InvokeRepeating(nameof(RecalculateAIPath), 0.0f, 1.0f);
     }
 
     private void Update()
@@ -40,6 +63,7 @@ public sealed class GameController : MonoBehaviour
     private void FixedUpdate()
     {
         _playerMovementController.FixedUpdate();
+        _stalkerPatrol.FixedUpdate();
     }
 
     private void LateUpdate()
@@ -52,5 +76,12 @@ public sealed class GameController : MonoBehaviour
         _spriteAnimator.Dispose();
         _coinsManager.Dispose();
         _deadZoneManager.Dispose();
+        _protectorAi.Dispose();
+        _protectedZone.Dispose();
+    }
+
+    private void RecalculateAIPath()
+    {
+        _stalkerPatrol.RecalculatePath();
     }
 }

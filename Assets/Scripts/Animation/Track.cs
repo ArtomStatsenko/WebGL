@@ -4,5 +4,7 @@
     Walk,
     Jump,
     Attack,
-    CoinRotation
+    CoinRotation,
+    JinnIdle,
+    DragonIdle
 }
