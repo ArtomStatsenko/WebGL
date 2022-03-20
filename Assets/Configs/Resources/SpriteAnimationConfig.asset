@@ -99,3 +99,15 @@ MonoBehaviour:
     - {fileID: 5522397121026081838, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
     - {fileID: 4786861022352539597, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
     - {fileID: 5728404248119495573, guid: 16d36a1d0664af84dbda54c36613ba12, type: 3}
+  - Track: 5
+    AnimationSpeed: 3
+    Sprites:
+    - {fileID: 21300000, guid: 3653475fa12d572418ea27fbe0f3536a, type: 3}
+    - {fileID: 21300000, guid: ae1ce471c1e2c31429e1e094e51a7e65, type: 3}
+    - {fileID: 21300000, guid: 91f1e350613c7b043a2c33c08d2f1eae, type: 3}
+  - Track: 6
+    AnimationSpeed: 3
+    Sprites:
+    - {fileID: 21300000, guid: f58b3e24dd71e874d8a96d918caac889, type: 3}
+    - {fileID: 21300000, guid: 8d63a8fb59e8f5741967bb3c0f20820d, type: 3}
+    - {fileID: 21300000, guid: ee09158bb8b34524f821e1f452ef25ee, type: 3}
