@@ -7,13 +7,13 @@ public sealed class LevelGeneratorView : MonoBehaviour
     [SerializeField] private Tile _tileGround;
     [SerializeField] private int _mapWidth;
     [SerializeField] private int _mapHeight;
-    [SerializeField] private float _smoothFactor;
-    [SerializeField] [Range(0f, 100f)] private float _fillPercent;
+    [SerializeField] private int _smoothFactor;
+    [SerializeField] [Range(0, 100)] private int _fillPercent;
 
     public Tilemap TileMapGround => _tileMapGround;
     public Tile TileGround => _tileGround;
     public int MapWidth => _mapWidth;
     public int MapHeight => _mapHeight;
-    public float SmoothFactor => _smoothFactor;
-    public float FillPercent => _fillPercent;
+    public int SmoothFactor => _smoothFactor;
+    public int FillPercent => _fillPercent;
 }
