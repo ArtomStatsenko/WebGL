@@ -4,7 +4,7 @@ using UnityEngine;
 
 public sealed class ProtectorAI : IProtector
 {
-    private EnemyView _view;
+    private readonly EnemyView _view;
     private readonly AIDestinationSetter _destinationSetter;
     private readonly AIPatrolPath _patrolPath;
     private int _currentPointIndex;
@@ -33,7 +33,7 @@ public sealed class ProtectorAI : IProtector
         _patrolPath.TargetReached -= OnTargetReached;
     }
 
-    public Transform GetNextTarget()
+    private Transform GetNextTarget()
     {
         if (_waypoints == null)
         {
