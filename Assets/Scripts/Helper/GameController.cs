@@ -11,10 +11,7 @@ public sealed class GameController : MonoBehaviour
     [SerializeField] private PlayerModel _playerModel;
     [SerializeField] private CoinView[] _coinViews;
     [SerializeField] private EnemyView _jinnView;
-    [SerializeField] private EnemyView _dragonView;
-    [SerializeField] private Transform _dragonTarget;
     [SerializeField] private AIConfig _aiConfig;
-    [SerializeField] private Seeker _stalkerAiSeeker;
     [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
     [SerializeField] private AIPatrolPath _protectorAIPatrolPath;
     [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
@@ -26,7 +23,6 @@ public sealed class GameController : MonoBehaviour
     private CoinsManager _coinsManager;
     private DeadZoneManager _deadZoneManager;
     private ProtectorAI _protectorAi;
-    private StalkerAI _stalkerPatrol;
     private ProtectedZone _protectedZone;
 
     private void Start()
@@ -47,11 +43,7 @@ public sealed class GameController : MonoBehaviour
 
         _protectedZone = new ProtectedZone(_protectedZoneTrigger, new List<IProtector> { _protectorAi });
         _protectedZone.Init();
-
-        _stalkerPatrol = new StalkerAI(_dragonView, _stalkerAiSeeker, _dragonTarget, _aiConfig, _spriteAnimator);
-        
-        InvokeRepeating(nameof(RecalculateAIPath), 0.0f, 1.0f);
-    }
+    } 
 
     private void Update()
     {
@@ -63,7 +55,6 @@ public sealed class GameController : MonoBehaviour
     private void FixedUpdate()
     {
         _playerMovementController.FixedUpdate();
-        _stalkerPatrol.FixedUpdate();
     }
 
     private void LateUpdate()
@@ -78,10 +69,5 @@ public sealed class GameController : MonoBehaviour
         _deadZoneManager.Dispose();
         _protectorAi.Dispose();
         _protectedZone.Dispose();
-    }
-
-    private void RecalculateAIPath()
-    {
-        _stalkerPatrol.RecalculatePath();
     }
 }
